@@ -2,6 +2,7 @@ var gulp  = require('gulp');
 var spawn = require('gulp-spawn');
 var browserSync = require('browser-sync');
 var rename = require('gulp-rename');
+var plumber = require('gulp-plumber');
 
 var config = {
   src: {
@@ -14,6 +15,7 @@ var config = {
 gulp.task('dot', function() {
   gulp
     .src(config.src.dot)
+    .pipe(plumber())
     .pipe(spawn({
       cmd: 'dot',
       args: ['-Tpng'],

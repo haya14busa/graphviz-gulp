@@ -9,6 +9,7 @@
   "author": "haya14busa",
   "license": "MIT",
   "dependencies": {
+    "gulp-plumber": "^1.0.0",
     "gulp-rename": "^1.2.2",
     "gulp-spawn": "^0.3.0"
   },
