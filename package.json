@@ -9,9 +9,11 @@
   "author": "haya14busa",
   "license": "MIT",
   "dependencies": {
+    "gulp-rename": "^1.2.2",
     "gulp-spawn": "^0.3.0"
   },
   "devDependencies": {
+    "browser-sync": "^2.6.5",
     "gulp": "^3.8.11"
   }
 }
