@@ -1,0 +1,17 @@
+{
+  "name": "graphviz-gulp",
+  "version": "1.0.0",
+  "description": "Graphviz edit with gulp",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "haya14busa",
+  "license": "MIT",
+  "dependencies": {
+    "gulp-spawn": "^0.3.0"
+  },
+  "devDependencies": {
+    "gulp": "^3.8.11"
+  }
+}
