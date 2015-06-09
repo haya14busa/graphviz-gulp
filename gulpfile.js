@@ -18,13 +18,14 @@ gulp.task('dot', function() {
     .pipe(plumber())
     .pipe(spawn({
       cmd: 'dot',
-      args: ['-Tpng'],
+      // args: ['-Tpng'],
+      args: ['-Tsvg'],
       filename: function(base, ext) {
-        return base + '.png';
+        return base + '.svg';
       }
     }))
     .pipe(gulp.dest(config.target))
-    .pipe(rename('preview.png'))
+    .pipe(rename('preview.svg'))
     .pipe(gulp.dest(config.target))
 })
 
